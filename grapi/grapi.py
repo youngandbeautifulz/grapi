@@ -21,7 +21,7 @@ class Grapi:
 
     def _get(self, **kwargs):
         h = {'Accept': 'application/json'}
-        response = requests.get(self.url, verify=false, auth=self._access_token, headers=h, params=kwargs)
+        response = requests.get(self.url, verify=False, auth=self._access_token, headers=h, params=kwargs)
         return response
 
     def _post(self, **kwargs):
